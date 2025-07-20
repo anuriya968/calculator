@@ -1,0 +1,71 @@
+*{
+    margin: 0%;
+    padding: 5px;
+    justify-content: center;
+    font-family: Arial;
+}
+h1{
+    text-align: center;
+}
+h1:hover{
+    color:gold ;
+    background-color: #4CAf50;
+}
+.box{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    flex-direction: column;
+    color: red;
+
+}
+#display{
+    width: 100%;
+    max-width: 350px;
+    min-width: 150px;
+    height: 50px;
+    border: none;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+    overflow-x: auto; /*  scroolong add if text is toolong*/
+    white-space: nowrap;
+    transition: all 0.1s ease;
+    color: aqua;
+    box-shadow: inset 0 0 5px #ccc;
+}
+
+.calculator{
+   margin: auto;
+   margin-top: 20px;
+    background: rgb(45, 43, 67);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px
+    rgba(0,0,0,0.2);
+     border: 5px solid black;
+    padding: 135px;
+    width: 5%;   
+    padding-top: 5px;  
+    height: 325px;
+    overflow: hidden;
+    
+}
+button:hover{
+    background: #45a049;
+}
+button{
+    height: 50px;
+    font-size: 18px;
+    background: #4CAf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    /*transition: background 0.3s;*/
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 10px;
+}
